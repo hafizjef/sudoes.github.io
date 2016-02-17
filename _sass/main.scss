@@ -1,4 +1,6 @@
 body {
+  color: #fff;
+  background-color: #333;
   font-family: 'Fira Sans', sans-serif;
   padding: 20px;
   margin: 0;
@@ -19,9 +21,14 @@ img {
   max-width: 100%;
 }
 a {
-  color: inherit;
+  color: #333;
   text-decoration: none;
-  border-bottom: 1px solid #555;
+  padding: 2px 3px 2px 3px;
+  background-color: #e74c3c;
+  border-top: 1px solid #e74c3c;
+  border-right: 1px solid #e74c3c;
+  border-bottom: 1px solid #e74c3c;
+  border-left: 1px solid #e74c3c;
   &.image {
     display: block;
     text-align: center;
@@ -55,13 +62,13 @@ span[data-note] {
   -webkit-transition: background 0.3s;
   -webkit-user-select: none;
   &.open {
-    background: #838383;
+    background: #fff;
   }
   @media (min-width: 768px) {
     vertical-align: 1px;
   }
   @media (min-width: 992px) {&:hover {
-      background: #838383;
+      background: #fff;
     }
   }
 }
@@ -117,8 +124,8 @@ span[data-note] {
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: bounce;
   a {
-    background: #ebebe0;
-    color: #000;
+    background: #737373;
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
     height: 100px;
@@ -183,6 +190,7 @@ iframe {
 }
 ul,
 ol {
+  color: #fff;
   margin: 40px 0;
   padding-left: 50px;
   li {
@@ -250,7 +258,7 @@ iframe {
   width: 100%;
 }
 article {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   .title {
     line-height: 1.4em;
@@ -270,10 +278,11 @@ article {
   }
   hr {
     border: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     margin: 30px 0;
   }
   p {
+    color: #fff;
     font-size: 15px;
     line-height: 1.9em;
     word-wrap: break-word;
@@ -292,15 +301,23 @@ article {
 .back {
   text-align: center;
   a {
+    color: #fff;
     text-decoration: none;
     margin: 40px auto 0;
     display: inline-block;
     padding: 10px;
     border: 0;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
     &:before {
       content: "<<";
       margin-right: 5px;
-      color: #000;
+      color: #fff;
+    }
+    &:hover{
+      border-color: #fff;
     }
   }
 }
@@ -323,7 +340,7 @@ section {
       a {
         text-decoration: none;
         border: 0;
-        color: #000;
+        color: #fff;
         box-sizing: border-box;
       }
       .post-date {
@@ -339,7 +356,7 @@ section {
       @media (min-width: 992px) {a {
           border-bottom: 2px solid transparent;
           &:hover {
-            border-color: #000;
+            border-color: #fff;
           }
         }
       }

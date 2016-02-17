@@ -9,3 +9,8 @@ How to use PGP with [GMail](https://mail.google.com)
 2. Generate your public key
 3. Publish your public key
 4. Stay secure! :ok_hand:
+
+```python
+s = "Python syntax highlighting"
+print s
+```

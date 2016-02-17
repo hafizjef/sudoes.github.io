@@ -1,9 +1,4 @@
 <aside class="logo">
-	<script>
-		var host = "blog.hafizjef.com";
-		if ((host == window.location.host) && (window.location.protocol != "https:"))
-		window.location.protocol = "https";
-	</script>
 	{% if page.url == '/index.html' or page.url == '/' %}
 		{% assign link = '/about' %}
 		{% assign prompt = 'About the Author' %}
